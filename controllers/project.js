@@ -1,5 +1,6 @@
 'use strict'
 var Project = require('../models/project');
+var UsuarioPasajero = require('../models/usuarioPasajero');
 var fs = require('fs');
 
 var controller = {
@@ -12,6 +13,12 @@ var controller = {
     test: function(req, res){
         return res.status(200).send({
             message: 'Soy el metodo o accion test del controlador de project'
+        })
+    },
+    saveUsuarioPasajero: function(req, res)
+    {   
+        return res.status(200).send({
+            message: 'Se registro correctamente'
         })
     }
 };
